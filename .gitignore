@@ -2,4 +2,6 @@
 ### Sass template
 .sass-cache/
 *.css.map
-
+ .idea/
+ config.rb
+ sass/
