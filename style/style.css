@@ -57,3 +57,443 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+body {
+  color: grey;
+  font-size: 19px;
+}
+body .wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+body a {
+  text-decoration: none;
+  color: gray;
+}
+
+.site {
+  font-family: 'Satisfy';
+  background: url("../img/Layer.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.site header {
+  display: flex;
+  justify-content: space-between;
+}
+.site header ul {
+  visibility: hidden;
+  text-align: left;
+}
+.site header nav:hover ul {
+  visibility: visible;
+}
+.site nav {
+  text-align: right;
+}
+.site h1 {
+  text-align: center;
+}
+.site .fa-angle-double-down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+@media screen and (max-width: 530px) {
+  .site {
+    min-height: 12em;
+  }
+  .site header {
+    padding: 2%;
+  }
+  .site h1 {
+    margin: 0 20% 0 20%;
+    padding-bottom: 10%;
+    font-size: 2em;
+  }
+
+  .Services {
+    min-height: 10em;
+  }
+  .Services ul {
+    margin: 1em 0;
+  }
+  .Services ul li {
+    margin: 10px 0;
+  }
+  .Services ul li span {
+    font-size: 25px;
+    color: #269cc5;
+  }
+  .Services ul li h2 {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  .Services ul li p {
+    margin-left: 22px;
+    line-height: 1.2;
+  }
+
+  .About {
+    background: #fafafa;
+  }
+  .About h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Satisfy';
+    margin: 1rem 0;
+    padding-top: 20px;
+  }
+  .About .sabtitle-About {
+    text-align: center;
+    margin: 10px 10px 30px;
+  }
+  .About .timeline {
+    position: relative;
+  }
+  .About .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 3px;
+    background-color: darkgray;
+  }
+  .About .timeline ul {
+    margin-right: 20px;
+  }
+  .About .timeline ul li {
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  .About .timeline ul li h3 {
+    font-weight: bold;
+    margin-bottom: 7px;
+  }
+  .About .timeline ul li h3:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 3px solid darkgray;
+    background-color: white;
+    border-radius: 100%;
+    right: -4px;
+  }
+
+  .portfolio h2 {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .portfolio ul {
+    text-align: center;
+    margin: 1em 0;
+  }
+  .portfolio ul li {
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .portfolio ul li img {
+    width: 100%;
+  }
+  .portfolio ul span {
+    position: absolute;
+    color: white;
+    padding: 0 10px;
+    left: 10px;
+    bottom: 40px;
+    opacity: 0;
+  }
+  .portfolio ul li:hover span {
+    opacity: 1;
+  }
+
+  .Testimonials {
+    margin-top: 40px;
+  }
+  .Testimonials h2 {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .Testimonials ul {
+    margin-top: 50px;
+  }
+  .Testimonials ul li {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .Testimonials ul li .fa-quote-right {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 14px 14px 11px;
+    margin-bottom: 20px;
+  }
+
+  .Contact {
+    text-align: center;
+    margin: 40px 0;
+  }
+  .Contact span {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: aquamarine;
+    display: block;
+  }
+  .Contact p {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .Contact p:after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 2px;
+    background: grey;
+    color: gray;
+    margin: 20px auto;
+  }
+
+  footer {
+    background: grey;
+    color: white;
+    min-height: 9em;
+  }
+  footer span {
+    font-family: 'Satisfy';
+    font-size: 30px;
+  }
+  footer p {
+    margin-top: 20px;
+  }
+  footer ul {
+    display: flex;
+    margin-top: 22px;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 531px) and (max-width: 720px) {
+  .site {
+    min-height: 17em;
+  }
+  .site header {
+    padding: 2%;
+  }
+  .site header span {
+    font-size: 32px;
+  }
+  .site header .fa-bars {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .site header ul {
+    display: flex;
+    font-size: 25px;
+  }
+  .site header ul li {
+    margin: 0 10px;
+  }
+  .site h1 {
+    margin: 0 20% 0 20%;
+    padding-bottom: 10%;
+    font-size: 3em;
+  }
+
+  .Services {
+    min-height: 10em;
+  }
+  .Services ul {
+    margin: 2em 0;
+  }
+  .Services ul li {
+    margin: 20px 0;
+  }
+  .Services ul li span {
+    font-size: 30px;
+    color: #269cc5;
+  }
+  .Services ul li h2 {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 17px;
+    padding-left: 10px;
+  }
+  .Services ul li p {
+    margin-left: 22px;
+    line-height: 1.3;
+    font-size: 23px;
+  }
+
+  .About {
+    background: #fafafa;
+  }
+  .About h2 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Satisfy';
+    margin: 1rem 0;
+    padding-top: 20px;
+  }
+  .About p {
+    font-size: 22px;
+  }
+  .About .sabtitle-About {
+    text-align: center;
+    margin: 10px 10px 30px;
+  }
+  .About .timeline {
+    margin: 40px 0;
+    position: relative;
+  }
+  .About .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 3px;
+    background-color: darkgray;
+  }
+  .About .timeline ul {
+    margin-right: 20px;
+    padding: 10px 0;
+  }
+  .About .timeline ul li {
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  .About .timeline ul li h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 7px;
+  }
+  .About .timeline ul li h3:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 3px solid darkgray;
+    background-color: white;
+    border-radius: 100%;
+    right: -4px;
+  }
+
+  .portfolio h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .portfolio span {
+    font-size: 22px;
+  }
+  .portfolio ul {
+    text-align: center;
+    margin: 1em 0;
+  }
+  .portfolio ul li {
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .portfolio ul li img {
+    width: 100%;
+  }
+  .portfolio ul span {
+    position: absolute;
+    color: white;
+    padding: 0 10px;
+    left: 7%;
+    right: 7%;
+    bottom: 61px;
+    opacity: 0;
+    font-size: 27px;
+  }
+  .portfolio ul li:hover span {
+    opacity: 1;
+  }
+
+  .Testimonials {
+    margin-top: 40px;
+  }
+  .Testimonials h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .Testimonials span {
+    font-size: 22px;
+  }
+  .Testimonials ul {
+    margin-top: 50px;
+  }
+  .Testimonials ul li {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .Testimonials ul li .fa-quote-right {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 14px 14px 11px;
+    margin-bottom: 20px;
+  }
+  .Testimonials ul li h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .Testimonials ul li p {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .Contact {
+    text-align: center;
+    margin: 40px 0;
+  }
+  .Contact span {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: aquamarine;
+    display: block;
+  }
+  .Contact p {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .Contact p:after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 2px;
+    background: grey;
+    color: gray;
+    margin: 20px auto;
+  }
+
+  footer {
+    background: grey;
+    color: white;
+    min-height: 9em;
+  }
+  footer span {
+    font-family: 'Satisfy';
+    font-size: 40px;
+  }
+  footer p {
+    margin-top: 20px;
+  }
+  footer ul {
+    display: flex;
+    margin-top: 22px;
+    justify-content: flex-start;
+  }
+  footer ul li {
+    padding: 0 10px;
+  }
+}
